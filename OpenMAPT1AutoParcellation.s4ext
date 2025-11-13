@@ -1,0 +1,14 @@
+[extension]
+name=OpenMAPT1AutoParcellation
+description=Auto parcellation pipeline for OpenMAP-T1
+version=1.0
+enabled=1
+category=Segmentation
+contributors=N. Acer, Adapted for Slicer
+icon=NONE
+
+[dependencies]
+none
+
+[python]
+moduleName=OpenMAPT1AutoParcellation
