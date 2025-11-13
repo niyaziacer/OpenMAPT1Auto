@@ -105,7 +105,6 @@ for fname, file_id in files.items():
 
 Make sure gdown is installed:
 
-
 pip install gdown
 
 
@@ -116,7 +115,7 @@ Load T1_280_segment.nii.gz in 3D Slicer and apply a color table (e.g., FullRainb
 Below is an example of the parcellated brain:
 ![Parcellation Example](https://raw.githubusercontent.com/niyaziacer/OpenMAPT1Auto/main/parcellation_example.png)
 Each color corresponds to a different anatomical region, and volumes are calculated automatically.
-
+![Parcellation Example](parcellation_example.png)
 
 
 
@@ -126,6 +125,7 @@ This project is licensed under the MIT License. See LICENSE for details.
 
 Important: Pretrained models are subject to the JHU Research Software License Agreement – No For-Profit, No Redistribution.
 This software and models are intended for educational and research purposes only, not for any commercial or profit-driven use.
+
 
 
 
