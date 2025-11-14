@@ -116,7 +116,13 @@ ABelow is an example of the parcellated brain:
 ![Parcellation Example](parcellation_example.png)
 Load T1_280_segment.nii.gz in 3D Slicer and apply a color table (e.g., FullRainbow) if desired.
 
+References
 
+OpenMAP-T1 Original Publication:
+Nishimaki K, Onda K, Ikuta K, Chotiyanonta J, Uchida Y, Mori S, Iyatomi H, Oishi K; Alzheimer’s Disease Neuroimaging Initiative; Australian Imaging Biomarkers and Lifestyle Flagship Study of Ageing.
+OpenMAP-T1: A Rapid Deep-Learning Approach to Parcellate 280 Anatomical Regions to Cover the Whole Brain.
+Human Brain Mapping, 2024 Nov;45(16):e70063.
+doi: 10.1002/hbm.70063     PMID: 39523990   PMCID: PMC11551626
 
 License
 
@@ -124,6 +130,7 @@ This project is licensed under the MIT License. See LICENSE for details.
 
 Important: Pretrained models are subject to the JHU Research Software License Agreement – No For-Profit, No Redistribution.
 This software and models are intended for educational and research purposes only, not for any commercial or profit-driven use.
+
 
 
 
