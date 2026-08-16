@@ -196,6 +196,16 @@ class OpenMAPT1AutoParcellationWidget(slicer.ScriptedLoadableModule.ScriptedLoad
             self.logMessage("Extracting...")
             with zipfile.ZipFile(temp_zip, 'r') as z:
                 z.extractall(self.moduleDir)
+                # Fix Windows-style backslash paths for Mac/Linux compatibility
+            for root, dirs, files in os.walk(self.moduleDir):
+                for filename in files:
+                if '\\' in filename:
+                    old_path = os.path.join(root, filename)
+                    parts = filename.split('\\')
+                    new_dir = os.path.join(root, *parts[:-1])
+                    os.makedirs(new_dir, exist_ok=True)
+                    new_path = os.path.join(new_dir, parts[-1])
+                    shutil.move(old_path, new_path)
             if os.path.exists(temp_zip):
                 os.remove(temp_zip)
 
